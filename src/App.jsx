@@ -131,8 +131,9 @@ function App() {
         <Row xs={1} md={2} className="g-4">
           <Card style={{minHeight:"150px"}}>
             <Card.Body>
+              <Form.Label>Chuck Noris joke categories</Form.Label>
               <Form.Select onChange={handleSelect}>
-                <option>Open this select menu</option>
+                <option>Select a Joke category from Chuck Noris</option>
                 {createCategoryList}
               </Form.Select>
             </Card.Body>
@@ -141,7 +142,7 @@ function App() {
             <Card.Body>{joke && joke}</Card.Body>
           </Card>
         </Row>
-        <Form.Label htmlFor="searchInput">Search for jokes</Form.Label>
+        <Form.Label htmlFor="searchInput">Search for Chuck Noris jokes</Form.Label>
         <Form.Control id="searchInput" type="text" placeholder="Joke search.." onChange={(e) => setSearchTerm(e.target.value)}/>
 
       </main>
