@@ -125,9 +125,6 @@ function App() {
           <Route path='druga' element={<Tekst2/>}></Route>
           <Route path='*' element={<Tekst3/>}></Route>
         </Routes>
-        <Row xs={1} sm={2} md={4} lg={6} className="g-6">
-          {createCard}
-        </Row>
         <Row xs={1} md={2} className="g-4">
           <Card style={{minHeight:"150px"}}>
             <Card.Body>
@@ -144,7 +141,9 @@ function App() {
         </Row>
         <Form.Label htmlFor="searchInput">Search for Chuck Noris jokes</Form.Label>
         <Form.Control id="searchInput" type="text" placeholder="Joke search.." onChange={(e) => setSearchTerm(e.target.value)}/>
-
+        <Row xs={1} sm={2} md={4} lg={6} className="g-6 p-5">
+          {createCard}
+        </Row>
       </main>
     </BrowserRouter>
     </>
